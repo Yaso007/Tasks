@@ -1,0 +1,148 @@
+*{
+    font-family: "Nunito Sans", sans-serif;;
+    
+}
+h2{
+    font-family: "Delius", cursive;
+}
+.center{
+    display:flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+.addFlex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+}
+
+button{
+background-color:  rgb(250, 246, 242);
+    border:0;
+  
+    font-size:larger ;
+    margin: 1rem;
+    transition: color background-color  border;
+    transition-duration: 350ms;
+}
+
+button:hover{
+    color:rgb(46, 135, 252);
+    border-radius:10px;
+    background-color: rgb(236, 236, 236);
+}
+
+.clickedTask{
+    color:rgb(46, 135, 252);
+    border-radius:10px;
+    background-color: rgb(236, 236, 236);
+}
+.notclickedTask{
+    color:rgb(0, 0, 0);
+    background-color:  rgb(250, 246, 242);
+}
+#addtask{
+    color:rgb(46, 135, 252);
+    
+}
+
+.borderDiv{
+    width: 70%;
+    border:0;
+    margin-top:20px;
+    border-radius: 10px;
+    background-color: rgb(250, 246, 242);
+}
+#complete{
+    border-radius: 50%;
+    appearance: none;
+    border:1px solid black;
+    cursor:pointer;
+    width:20px;
+    height: 20px;
+    content: '✔';
+}
+
+input[type="checkbox"]:checked {
+    background-color: #007bff;
+
+  }
+  input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    appearance: none; /* Hides default checkbox */
+    background-color: white;
+    border: 2px solid #007bff;
+    border-radius: 50%; /* Makes it round */
+    cursor: pointer;
+    position: relative;
+  }
+  
+  input[type="checkbox"]:checked {
+    background-color: #007bff;
+  }
+  
+  input[type="checkbox"]::before {
+    content: '✔';
+    color: white;
+    font-size: 16px;
+    display: none;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  input[type="checkbox"]:checked::before {
+    display: block;
+  }
+
+.task{
+    margin-bottom:15px ;
+    height: 100px;
+    width: 85%;
+    border:1px solid black;
+    border-radius:10px;
+    background-color: white;
+}
+.taskComplete{
+    margin-bottom:15px ;
+    height: 100px;
+    width: 85%;
+    border:1px solid black;
+    border-radius:10px;
+    background-color: white;
+    text-decoration: line-through;
+}
+h3{
+    width: 70%;
+    padding: 10px;
+    font-weight: lighter;
+}
+
+.taskinput{
+    visibility: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999; /* High z-index to be on top */
+    border: 1px solid black; /* Optional: for visibility */
+    color: white; /* Optional */
+    padding: 15px; /* Optional */
+    border-radius: 10px; 
+    background-color: white;
+    
+}
+
+#inputtask{
+    width: 400px;
+    height: 40px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+h6{
+    visibility: hidden;
+}

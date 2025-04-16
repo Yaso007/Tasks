@@ -1,0 +1,19 @@
+.back{
+height: 300px;
+background-color: red;
+width: 400px;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+
+}
+button{
+    margin:20px;
+}
+div{
+    text-align: center;
+}

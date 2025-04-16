@@ -1,0 +1,75 @@
+.box{
+    height: 100px;
+    width: 200px;
+    transition-property: background-color;
+    transition-duration: 0.5s;
+    border:1px solid red;
+}
+.box:hover{
+    background-color: red;
+    transition-duration: 3s;
+ 
+}
+.box1{
+    height: 100px;
+    width: 200px;
+    transition-property: background-color, transform;
+    transition-duration: 0.5s;
+    border:1px solid red;
+    animation:FadeIn 2s ease infinite alternate;
+}
+.box1:hover{
+    background-color: red;
+    transform: scale(1.1);
+}
+.box2{
+    height: 100px;
+    width: 200px;
+    transition-property: all;
+    transition-duration: 0.5s;
+    border:1px solid red;
+}
+.box2:hover{
+    color:antiquewhite;
+    font-size: larger;
+    background-color: red;
+    transform: scale(1.1);
+}
+@media(max-width:500px){
+    .box{
+        background-color: black;
+    }
+}
+@keyframes FadeIn {
+    0%{
+        transform: translateX(0);
+
+    }
+    100%{
+        transform:translateX(400px);
+    }
+    
+}
+.h{
+    height: 400px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+button{
+    width: 300px;
+    height: 100px;
+    border-radius: 15px;
+    background-color: black;
+    color: white;
+    font-size: large;
+    transition-property: background-color,transform, color;
+    transition-duration: 0.5s;
+    
+}
+button:hover{
+    background-color: white;
+    color:black;
+    transform: scale(1.1);
+
+}

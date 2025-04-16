@@ -1,0 +1,37 @@
+.container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:10px;
+    justify-content: center;
+    
+}
+.cards{
+    height: 100px;
+    border:2px solid black;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:rgb(168, 22, 236)
+    
+}
+@media (max-width: 768px) {
+    .container{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap:10px;
+        justify-content: center;
+        
+    }
+    .cards{
+        height: 100px;
+        border:2px solid black;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color:rgb(22, 158, 236)
+        
+    }
+    
+}

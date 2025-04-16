@@ -1,0 +1,18 @@
+.card{
+    border: 1px solid black;
+    width:20vw;
+    height:10vh;
+    padding:1vw;
+    background-color: bisque;
+    border-radius: 5px;
+    text-align: center;
+}
+.cards{
+    display: grid;
+    grid-template-columns: repeat(2,200px);
+    grid-template-rows: 60px;
+    background-color: red;
+    height: 60vh;
+    gap:10px;
+    border:2px solid black;
+}
