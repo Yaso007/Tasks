@@ -1,0 +1,29 @@
+.loginWrapper{
+  background-color: purple;
+  margin: 10px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  border-radius:10px;
+
+}
+input{
+  display: block;
+  border-radius: 10px;
+  border-color:white;
+  border-style: none;
+  margin: 10px;
+  width: 200px;
+  height: 30px;
+}
+.loginPage{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}

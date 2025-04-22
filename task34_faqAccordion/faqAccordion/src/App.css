@@ -1,0 +1,54 @@
+.wrapper {
+  background-color: #6750A4;
+  width: 600px;
+  border: 2px solid #E7E0EC;
+  min-height: 100px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  flex-direction: column;
+}
+
+body {
+  padding: 25px;
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+  background-color: #1D1B20;
+  color: white;
+}
+
+h3 {
+  margin-right: 150px;
+  display: block;
+  width: 300px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: center;
+}
+
+.accordion-content {
+  text-align: center;
+  max-height: 0px; /* Initial state, collapsed */
+  overflow: hidden; /* Hide content when collapsed */
+  transition: max-height 5s ease-in-out; /* Transition on max-height */
+}
+
+.accordion-content.open {
+  max-height: 500px; /* Set a large enough max-height for when it's expanded */
+  padding: 10px; /* Add padding when open for better visibility */
+}
+
+.accordion-content p {
+  margin: 0;
+}
