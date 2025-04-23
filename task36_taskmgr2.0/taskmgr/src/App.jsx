@@ -1,6 +1,6 @@
 import React from 'react';
 import Login from './pages/Login';
-import Dashboard from './pages/Dashboard';
+import Dashboard from './pages/dashboard/Dashboard';
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
 function App() {
   return (
@@ -13,6 +13,7 @@ function App() {
         </Route>
       </Routes>
     </BrowserRouter>
+    
 
     </>
     
