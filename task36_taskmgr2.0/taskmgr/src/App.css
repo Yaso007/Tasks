@@ -47,3 +47,20 @@ h1{
 body{
   margin: 0px;
 }
+.message {
+  margin-top: 1rem;
+  padding: 0.75rem 1rem;
+  border-radius: 5px;
+  text-align: center;
+  font-weight: 500;
+}
+
+.message.success {
+  color: green;
+  background-color: #e6ffe6;
+}
+
+.message.error {
+  color: red;
+  background-color: #ffeded;
+}

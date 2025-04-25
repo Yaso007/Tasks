@@ -39,12 +39,13 @@ function Dashboard(){
     return(
         <>
             <NWrap className="navwrapper" >
-                <Navbar username={localStorage.getItem("name")}>
+                <Navbar username={localStorage.getItem("name")} setTask={setTask} setRefresh={setRefresh}
+                >
                 </Navbar>
             </NWrap>
             <div className="menu">
                 <TaskCreator setRefresh={setRefresh}></TaskCreator>
-                <Filter></Filter>
+                <Filter setTask={setTask} setRefresh={setRefresh}></Filter>
             </div>
 
             {task.length > 0 ? (
@@ -59,7 +60,7 @@ function Dashboard(){
           />
         ))
       ) : (
-        <p>No tasks available</p>
+        <p className="noTask">No tasks available</p>
       )}
         </>
       

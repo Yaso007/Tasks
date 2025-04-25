@@ -12,6 +12,10 @@ export default function TaskCreator({setRefresh}){
     }
 
     const handleButton = (e)=>{
+        if(input===""){
+            alert("Task can't be empty")
+            return
+        }
         const task = input
         const token = localStorage.getItem(localStorage.getItem("name"))
         const username = localStorage.getItem("name")
